@@ -1,0 +1,21 @@
+truefract
+---------
+
+Displays the boundaries of Mandelbrot and Julia sets on a pixelated
+digital display accurately by guaranteeing correctness using interval
+arithmetic.
+
+The traditional method to draw fractals on a computer screen is to first
+choose an iteration limit. Then, for each pixel we compute the complex
+iteration of the associated fractal at a point corresponding to the
+center of the pixel enough number of times to determine the nature of
+the complex sequence produced at that point, but whose length is upper
+bounded by the iteration limit. While this is a compromise between
+accuracy and time for practical purposes, it does not make clear what
+the iteration limit must be to produce the "correct" fractal boundary on
+a pixelated display, where correctness is as defined below.
+
+The problem of drawing a fractal boundary on a pixelated display is the
+problem of determining the pixels through which the fractal boundary
+passes and coloring only those pixels black. A drawing of this type is
+"correct" (this is as precise as the display would allow us to be).
